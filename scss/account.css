@@ -1,0 +1,591 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: 'Arial Bond', sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__logo {
+  display: inline-block;
+  width: 125px;
+  height: 80px;
+  min-width: 140px;
+  background: url("../images/logo.webp") center/contain no-repeat;
+}
+
+.menu__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__options .option {
+  margin: 0 10px;
+  line-height: 40px;
+  font-size: 16px;
+  font-style: normal;
+  color: grey;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.menu__options .option:hover {
+  color: black;
+  text-shadow: 1px 2px 2px  whitesmoke;
+}
+
+.menu__options .option:active {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+@media (max-width: 768px) {
+  .menu__options {
+    display: none;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px 10px;
+  background-color: black;
+  height: 140px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+@media (max-width: 480px) {
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__col {
+  padding: 0 10px;
+}
+
+.footer__col:first-child, .footer__col:nth-child(2) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.footer__col:nth-child(3), .footer__col:last-child {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+@media (max-width: 480px) {
+  .footer__col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.footer__title {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer__title {
+    font-size: 12px;
+  }
+}
+
+.footer__subtitle {
+  text-align: center;
+  line-height: 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer__subtitle {
+    display: none;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-family: 'Arial Bond', sans-serif;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__logo {
+  display: inline-block;
+  width: 125px;
+  height: 80px;
+  min-width: 140px;
+  background: url("../images/logo.webp") center/contain no-repeat;
+}
+
+.menu__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu__options .option {
+  margin: 0 10px;
+  line-height: 40px;
+  font-size: 16px;
+  font-style: normal;
+  color: grey;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.menu__options .option:hover {
+  color: black;
+  text-shadow: 1px 2px 2px  whitesmoke;
+}
+
+.menu__options .option:active {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+@media (max-width: 768px) {
+  .menu__options {
+    display: none;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px 10px;
+  background-color: black;
+  height: 140px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -10px;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+@media (max-width: 480px) {
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__col {
+  padding: 0 10px;
+}
+
+.footer__col:first-child, .footer__col:nth-child(2) {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.footer__col:nth-child(3), .footer__col:last-child {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+@media (max-width: 480px) {
+  .footer__col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.footer__title {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer__title {
+    font-size: 12px;
+  }
+}
+
+.footer__subtitle {
+  text-align: center;
+  line-height: 20px;
+  color: gray;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer__subtitle {
+    display: none;
+  }
+}
+
+.login > input, .account > input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 14px;
+  background: gainsboro;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+
+.main_head {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.main_head::before {
+  content: "";
+  background: url("../images/ryan2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.85;
+}
+
+.main_section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 150px;
+  position: relative;
+  text-align: center;
+}
+
+.main_section_content {
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.main_section_content h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  padding-bottom: 40px;
+}
+
+.login {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 160px;
+  left: 140px;
+  width: 400px;
+  -webkit-box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+          box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.login > h2 {
+  font-family: "Asap", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.login > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: #f45b69;
+}
+
+.login > button:hover {
+  background-color: #f24353;
+}
+
+.login > input, .account > input {
+  font-family: "Asap", sans-serif;
+  display: block;
+  border-radius: 5px;
+  font-size: 14px;
+  background: gainsboro;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+
+.main_head {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 800px;
+  position: relative;
+}
+
+.main_head::before {
+  content: "";
+  background: url("../images/ryan2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.85;
+}
+
+.main_section {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 150px;
+  position: relative;
+  text-align: center;
+}
+
+.main_section_content {
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.main_section_content h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+  padding-bottom: 40px;
+}
+
+.account {
+  overflow: hidden;
+  background-color: white;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 80px;
+  left: 140px;
+  width: 400px;
+  -webkit-box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+          box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+
+.account .label {
+  margin-right: 360px;
+}
+
+.account > h2 {
+  font-family: "Asap", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.account > button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #f45b69;
+}
+
+.account > button:hover {
+  background-color: #f24353;
+}
