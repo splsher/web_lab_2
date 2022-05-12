@@ -15,9 +15,8 @@
                 <div class="menu__options">
                     <a class="option" href="index.html"> Home </a>
                     <a class="option" href="cars.html"> Cars </a>
-                    <a class="option" href="login.html"> Log in </a>
-                    <a class="option" href="register.html"> Register </a> 
-                    <a class="option" href="account.html"> Account </a> 
+                    <a class="option" id = "menu_log">  </a>
+                    <a class="option" id = "menu_reg_ac">  </a> 
                 </div>   
             </nav>
         </div>
@@ -26,13 +25,12 @@
     <main class="main">
         <div class="main_head">
             <div class="main_section">
-
-               <form class="login">
+                <div class="login">
                 <h2>Welcome back</h2>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button>Login</button>
-              </form>
+                <input id = "login" type="text" placeholder="Username">
+                <input id = "password" type="password" placeholder="Password">
+                <button id = "log_button" onclick=log()>Login</button>
+                </div>
               </div>
             </div>
         </div>
@@ -84,7 +82,7 @@
             </div>
         </div>
     </footer>
-    
-    
+
+    <script src="js/login.js"></script>
 </body>
 </html>

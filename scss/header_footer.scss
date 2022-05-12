@@ -81,13 +81,6 @@
     &__col{
         // flex-basis: 25%;
         padding: 0 10px;
-
-        &:first-child, &:nth-child(2){
-            flex-basis: 30%;
-        }
-        &:nth-child(3), &:last-child{
-            flex-basis: 20%;
-        }
         @media(max-width:480px){
             flex-basis: 100%;
         }

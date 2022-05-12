@@ -15,34 +15,33 @@
                 <div class="menu__options">
                     <a class="option" href="index.html"> Home </a>
                     <a class="option" href="cars.html"> Cars </a>
-                    <a class="option" href="login.html"> Log in </a>
-                    <a class="option" href="register.html"> Register </a> 
-                    <a class="option" href="account.html"> Account </a> 
-                </div>   
+                    <a class="option" id = "menu_log">  </a>
+                    <a class="option" id = "menu_reg_ac">  </a> 
+
+                </div>  
             </nav>
         </div>
     </header>  
     <main class="main">
         <div class="main_head">
             <div class="main_section">
-                <form class="account">
+                <div class="account">
                     <h2>Your profile</h2>
                     <label class = "label" for="fname">Username:</label>
-                    <input type="text" id="fname" placeholder="pokemon" readonly>
+                    <input id = "Username" type="text" id="fname" placeholder="pokemon" readonly>
                     <label class = "label" for="fname">First name:</label>
-                    <input type="text" placeholder="Ostap" readonly>
+                    <input id = "firstName" type="text" placeholder="Ostap" readonly>
                     <label class = "label" for="fname">Last name:</label>
-                    <input type="text" placeholder="Shcherbii" readonly>
+                    <input id = "lastName" type="text" placeholder="Shcherbii" readonly>
                     <label class = "label" for="fname">Phone:</label>
-                    <input type="text" placeholder="+380991753875" readonly>
+                    <input id = "phone" type="text" placeholder="+380991753875" readonly>
                     <label class = "label" for="fname">Email:</label>
-                    <input type="text" placeholder="shchostap@gmail.com" readonly>
+                    <input id = "email" type="text" placeholder="shchostap@gmail.com" readonly>
                     <label class = "label" for="fname">Password:</label>
                     <input type="password" placeholder="Password" readonly>
-                    <button>Edit</button>
-                    <button>Delete</button>
-                    <button>Log out</button>
-                  </form>
+                    <button onclick=del()>Delete</button>
+                    <button onclick=out() >Log out</button>
+                  </div>
     
               </div>
             </div>
@@ -96,6 +95,7 @@
         </div>
     </footer>
     
-    
+    <script src="js/login.js"></script>
+    <script src="js/accaunt.js"></script>
 </body>
 </html>

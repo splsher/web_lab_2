@@ -15,27 +15,26 @@
                 <div class="menu__options">
                     <a class="option" href="index.html"> Home </a>
                     <a class="option" href="cars.html"> Cars </a>
-                    <a class="option" href="login.html"> Log in </a>
-                    <a class="option" href="register.html"> Register </a> 
-                    <a class="option" href="account.html"> Account </a> 
-                </div>   
+                    <a class="option" id = "menu_log">  </a>
+                    <a class="option" id = "menu_reg_ac">  </a> 
+
+                </div>  
             </nav>
         </div>
     </header>  
     <main class="main">
         <div class="main_head">
             <div class="main_section">
-                <form class="register">
+                <div class="register">
                     <h2>Welcome</h2>
-                    <input type="text" placeholder="Username" >
-                    <input type="text" placeholder="FirstName">
-                    <input type="text" placeholder="LastName">
-                    <input type="text" placeholder="Phone">
-                    <input type="text" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button>Register</button>
-                  </form>
-    
+                    <input id = "login1" type="text" placeholder="Username" >
+                    <input id = "firstName" type="text" placeholder="FirstName">
+                    <input id = "lastName" type="text" placeholder="LastName">
+                    <input id = "phone" type="text" placeholder="Phone">
+                    <input id = "email" type="text" placeholder="Email">
+                    <input id = "password1" type="password" placeholder="Password">
+                    <button onclick=register()>Register</button>
+                </div>
               </div>
             </div>
         </div>
@@ -88,6 +87,7 @@
         </div>
     </footer>
     
-    
+    <script src="js/login.js"></script>
+    <script src="js/regiser.js"></script>
 </body>
 </html>
