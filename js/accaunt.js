@@ -6,17 +6,7 @@ function out(){
     location.replace("index.html")
 }
 window.onload = function(){
-    if (readCookie('token') === null || readCookie('token') === 'undefined'|| readCookie('token') === '0'){
-        document.querySelector("#menu_log").innerHTML = "Log in";
-        document.querySelector("#menu_log").href = "login.html";
-        document.querySelector("#menu_reg_ac").innerHTML = "Register";
-        document.querySelector("#menu_reg_ac").href = "register.html";
-    }else{
-        document.querySelector("#menu_log").innerHTML = "Log out";
-        document.querySelector("#menu_log").href = "index.html";
-        document.querySelector("#menu_reg_ac").innerHTML = "Account";
-        document.querySelector("#menu_reg_ac").href = "account.html";
-    }
+
     authToken = readCookie('token') 
     url ="http://127.0.0.1:5000/api/v1/user/" +  readCookie('login') 
     fetch(url, 
