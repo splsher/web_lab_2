@@ -1,16 +1,15 @@
 function register(){
-    login1 =  document.getElementById("login1").value;
-    firstName = document.getElementById("firstName").value;
-    lastName =  document.getElementById("lastName").value;
-    phone = document.getElementById("phone").value;
-    email =  document.getElementById("email").value;
-    password = document.getElementById("password1").value;
+    username =  document.getElementById("username").value;
+    email = document.getElementById("email").value;
+    password =  document.getElementById("password").value;
+    city = document.getElementById("city").value;
+    photo =  document.getElementById("photo").value;
     user_status = 'User'
     
     data = 
-        {  "firstName":firstName, "lastName":lastName,"login":login1, "email":email, "phone":phone, "password":password, "user_status":user_status};
+        {  "username":username, "email":email,"password":password, "city":city, "photo":photo, "user_status":user_status};
 
-    fetch("http://127.0.0.1:5000/api/v1/user", 
+    fetch("http://127.0.0.1:5000/signup",
     {
     method: 'POST',
     headers: {

@@ -1,4 +1,3 @@
-
 function out(){
     eraseCookie('token')
     eraseCookie('login')
@@ -17,19 +16,20 @@ window.onload = function(){
       }}
       ).then(res=>{
         if(res.ok){
+            debugger
             return res.json()
         }else{
+            debugger
             alert("something is wrong")
         }
     }).then(data =>{
         //token = localStorage.getItem('token');
         console.log(data)
-        document.querySelector("#Username").placeholder = data["login"];
-        document.querySelector("#firstName").placeholder = data["firstName"];
-        document.querySelector("#lastName").placeholder = data["lastName"];
-        document.querySelector("#phone").placeholder = data["phone"];
+        document.querySelector("#username").placeholder = data["login"];
         document.querySelector("#email").placeholder = data["email"];
-        //document.querySelector("#firstName").placeholder = data["firstName"];
+        document.querySelector("#password").placeholder = data["password"];
+        document.querySelector("#city").placeholder = data["city"];
+        document.querySelector("#photo").placeholder = data["photo"];
         }
     ).catch((err) => {
         console.error(err)

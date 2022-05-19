@@ -1,26 +1,27 @@
 function log(){
-    login =  document.getElementById("login").value;
+    username =  document.getElementById("username").value;
     password = document.getElementById("password").value;
     data = 
-        { "login":login, "password":password};
+        { "username":username, "password":password};
         console.log(data)
-    fetch("http://127.0.0.1:5000/api/v1/user/login?method=cookie", 
+    fetch("http://127.0.0.1:5000/login",
         {
         method: 'POST',
         headers: {
             'Content-type': 'application/json',
-            'Accept': 'application/json'
+            'Accept': '*/*'
                     },
         body:JSON.stringify(data)}).then(res=>{
             if(res.ok){
                 return res.json()
             }else{
+                debugger
                 alert("something is wrong")
             }
         }).then(jsonResponse=>{
             //token = localStorage.getItem('token');
             createCookie('token',jsonResponse,7);
-            createCookie('login',login,7);
+            createCookie('username',username,7);
             location.replace("index.html")
 
             }

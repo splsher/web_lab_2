@@ -1,4 +1,3 @@
-
 function createCookie(name,value,days) {
 	if (days) {
 		var date = new Date();
@@ -23,9 +22,6 @@ function readCookie(name) {
 function eraseCookie(name) {
 	createCookie(name,"",-1);
 }
-//createCookie('token','czsxcz',7);
-//eraseCookie('token')
-//console.log(readCookie('token'))
 
 if (readCookie('token') === null || readCookie('token') === 'undefined'|| readCookie('token') === '0'){
     document.querySelector("#menu_log").innerHTML = "Log in";
@@ -48,7 +44,7 @@ const logo = document.getElementById('menu_log')
 logo.addEventListener("click", () =>{
     if (document.querySelector("#menu_log").innerHTML === "Log out"){
         eraseCookie('token')
-        eraseCookie('login')
+        eraseCookie('username')
         location.replace("index.html")
     }
 });

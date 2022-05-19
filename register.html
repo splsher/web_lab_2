@@ -12,14 +12,10 @@
         <div class="conteiner">
             <nav class="menu__row">
                 <a class="menu__logo" href="index.html"></a>
-                <div class="menu__options">
-                    <a class="option" href="index.html"> Home </a>
-                    <a class="option" href="cars.html"> Cars </a>
-                    <a class="option" id = "menu_log">  </a>
-                    <a class="option" id = "menu_reg_ac">  </a> 
-
-                </div>  
             </nav>
+            <div class="menu__options">
+               <a class="option" id = "menu_log">  </a>
+            </div>
         </div>
     </header>  
     <main class="main">
@@ -27,12 +23,11 @@
             <div class="main_section">
                 <div class="register">
                     <h2>Welcome</h2>
-                    <input id = "login1" type="text" placeholder="Username" >
-                    <input id = "firstName" type="text" placeholder="FirstName">
-                    <input id = "lastName" type="text" placeholder="LastName">
-                    <input id = "phone" type="text" placeholder="Phone">
-                    <input id = "email" type="text" placeholder="Email">
-                    <input id = "password1" type="password" placeholder="Password">
+                    <input id = "username" type="text" placeholder="username" >
+                    <input id = "email" type="text" placeholder="email">
+                    <input id = "password" type="text" placeholder="password">
+                    <input id = "city" type="text" placeholder="city">
+                    <input id = "photo" type="text" placeholder="photo">
                     <button onclick=register()>Register</button>
                 </div>
               </div>
@@ -57,16 +52,12 @@
                     <div class="footer__item">
                         <div class="footer__img">
                         </div>
-                        <div class="footer__subtitle">
-                            Our service is designed so that you get the most out of your trip and do not waste your time and energy traveling in an unfamiliar city. 
-                            You can safely book online today with only a small prepayment, and pay the rest upon arrival at the reception!
-                        </div>
                     </div>                   
                 </div>
                 <div class="footer__col">                     
                     <div class="footer__item">
                         <div class="footer__title">
-                            Useful links 
+                            About us
                         </div>
                         <div class="footer__subtitle">
                             Coupons <br> Blog Post <br> Return Policy <br> Api
@@ -76,7 +67,7 @@
                 <div class="footer__col">                        
                     <div class="footer__item">
                         <div class="footer__title">
-                            Follow us
+                            Subscribe
                         </div>
                         <div class="footer__subtitle">
                             Facebook <br>  Twitter <br> Instagram <br> Youtube
@@ -86,7 +77,6 @@
             </div>
         </div>
     </footer>
-    
     <script src="js/login.js"></script>
     <script src="js/regiser.js"></script>
 </body>
